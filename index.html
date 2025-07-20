@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinchhh</title>
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<style>
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+    }
+</style>
+
+<body>
+
+    <!-- offer -->
+    <section id="offer" class="bg-black text-white flex w-full justify-around p-1">
+        <h1 class="text-xs md:text-xl">Sign Up and <b>GET 20% OFF</b> for your first Order </h1>
+        <h1 class="cursor-pointer" id="close">X</h1>
+    </section>
+
+
+    <!-- Navbar -->
+    <section id="Navbar" class="p-5 flex justify-between items-center text-black sticky z-50 top-0 bg-white">
+        <div class="flex gap-1">
+            <img src="logo.png" alt="" class="h-8 w-8 bg-pink-100 shadow-2xl rounded-full">
+            <h1 class="font-bold text-2xl">Pinchhh</h1>
+        </div>
+
+
+        <div>
+            <ul class="text-lg flex gap-10 hidden md:flex">
+                <li class="hover:underline"><a href="index.html">Home</a></li>
+                <li class="hover:underline"><a href="index.html#new-arrival">Ethnic Arrival</a></li>
+                <li class="hover:underline"><a href="index.html#most-wanted">Most Wanted</a></li>
+                <li class="hover:underline"><a href="collection.html">Collection</a></li>
+                <li class="hover:underline"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden" id="menuicon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </section>
+
+    <!-- sidenav -->
+    <div id="sidenav" style="width: 50%;height: 100vh;left: -50%;"
+        class="bg-black text-white fixed z-50 left-0 top-0 transition-all duration-1000 ease-in-out">
+        <div class="text-left p-10">
+            <h1 id="closenav" class="cursor-pointer text-right">X</h1>
+        </div>
+        <div>
+            <ul class="gap-10 items-center flex flex-col sticky ">
+                <li class="hover:underline"><a href="index.html">Home</a></li>
+                <li class="hover:underline"><a href="index.html#new-arrival">Ethnic Arrival</a></li>
+                <li class="hover:underline"><a href="index.html#most-wanted">Most Wanted</a></li>
+                <li class="hover:underline"><a href="collection.html">Collection</a></li>
+                <li class="hover:underline"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- slideshow -->
+    <section id="slideshow">
+        <div class="relative">
+            <ul>
+                <li class="h-[50vh] relative">
+                    <img src="banner3.webp" alt="" class=" object-cover h-96  md:h-full">
+                    <div class="absolute top-0 left-0 h-96  md:h-full w-full flex  bg-black bg-opacity-60">
+                        <div class="my-auto w-full text-white text-center flex flex-col  md:gap-2">
+                            <div>
+                                <h1 class="text-2xl md:text-4xl font-bold">Level up your style with our</h1>
+                            </div>
+                            <div>
+                                <p class="text-xl md:text-xl font-semibold md:font-bold mt-2 md:mt-0">Summer Collection
+                                </p>
+                            </div>
+                            <div>
+                                <button
+                                    class="text-xl mt-2 md:mt-0 p-1 bg-white  text-black md:p-2 rounded-lg md:text-xs">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="h-[50vh] relative">
+                    <img src="banner2.webp" alt="" class=" object-cover h-96  md:h-full">
+                    <div class="absolute top-0 left-0 h-96  md:h-full w-full flex  bg-black bg-opacity-60">
+                        <div class="my-auto w-full text-white text-center flex flex-col  md:gap-2">
+                            <div>
+                                <h1 class="text-2xl md:text-4xl font-bold">Level up your style with our</h1>
+                            </div>
+                            <div>
+                                <p class="text-xl md:text-xl font-semibold md:font-bold mt-2 md:mt-0">Summer Collection
+                                </p>
+                            </div>
+                            <div>
+                                <button
+                                    class="text-xl mt-2 md:mt-0 p-1 bg-white  text-black md:p-2 rounded-lg md:text-xs">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="h-[50vh] relative">
+                    <img src="banner1.webp" alt="" class=" object-cover h-96  md:h-full">
+                    <div class="absolute top-0 left-0 h-96  md:h-full w-full flex  bg-black bg-opacity-60">
+                        <div class="my-auto w-full text-white text-center flex flex-col  md:gap-2">
+                            <div>
+                                <h1 class="text-2xl md:text-4xl font-bold">Level up your style with our</h1>
+                            </div>
+                            <div>
+                                <p class="text-xl md:text-xl font-semibold md:font-bold mt-2 md:mt-0">Summer Collection
+                                </p>
+                            </div>
+                            <div>
+                                <button
+                                    class="text-xl mt-2 md:mt-0 p-1 bg-white  text-black md:p-2 rounded-lg md:text-xs">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+            <div class="absolute h-full w-full top-0 left-0 flex px-10 ">
+                <div class="my-auto w-full justify-between flex">
+                    <button id="btn-1" title="btn-1"
+                        class="h-10 w-10 md:h-12 md:w-12 p-2 bg-white rounded-full bg-opacity-80 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+
+                    </button>
+                    <button id="btn-2" title="btn-2"
+                        class="h-10 w-10 md:h-12 md:w-12 p-2 bg-white rounded-full bg-opacity-80 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- brands -->
+    <section class="hidden md:block">
+        <h1 class="text-3xl text-center font-bold my-5 text-black">Brands</h1>
+        <br>
+        <div class="flex gap-10 justify-around text-center ">
+            <div>
+                <img src="img3.png" alt="" class="h-16 w-16">
+                <p>Simple</p>
+            </div>
+            <div>
+                <img src="img4.png" alt="" class="h-16 w-16">
+                <p>Leaves</p>
+            </div>
+            <div>
+                <img src="img2.png" alt="" class="h-16 w-16">
+                <p>Adidas</p>
+            </div>
+            <div>
+                <img src="img1.png" alt="" class="h-16 w-16">
+                <p>Behance</p>
+            </div>
+            <div>
+                <img src="img5.png" alt="" class="h-16 w-16">
+                <p>Twitch</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- best customer experiences -->
+    <section class="flex gap-10 md:gap-24 m-2 md:m-10 mt-24 items-center justify-between">
+        <div>
+            <h1 class="text-xs md:text-3xl font-bold">We Provide Best </h1>
+            <h1 class="text-xs md:text-3xl font-bold">Customer Experiences</h1>
+        </div>
+        <h1 class="text-xs md:text-2xl font-semibold">|| We ensure that our customer have the best shopping experience
+        </h1>
+    </section>
+
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 m-5 ">
+        <div class="bg-gray-200 p-2 rounded-lg shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-10 w-10">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+            </svg>
+            <h1 class="font-bold">Original Products</h1>
+            <p class="text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+            </p>
+        </div>
+        <div class="bg-gray-200 p-2 rounded-lg shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-10 w-10">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+            </svg>
+
+            <h1 class="font-bold">Satisfaction Guarantee</h1>
+            <p class="text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+            </p>
+        </div>
+        <div class="bg-gray-200 p-2 rounded-lg shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-10 w-10">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+            </svg>
+            <h1 class="font-bold">New Arrival Everyday</h1>
+            <p class="text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+            </p>
+        </div>
+        <div class="bg-gray-200 p-2 rounded-lg shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-10 w-10">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+            </svg>
+            <h1 class="font-bold">Fast & Free Shipping</h1>
+            <p class="text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+            </p>
+        </div>
+
+
+    </section>
+
+    <!-- new arrivals -->
+    <section class=" m-10 md:m-0 " id="new-arrival">
+        <h1 class="text-center font-bold text-3xl my-10 text-black">Ethnic Arrival</h1>
+
+        <div class=" md:flex  md:flex-wrap md:gap-5 md:m-5">
+            <div class="relative inline-block">
+                <img src="arrival1.jpg" alt="" class=" md:h-80   md:w-56 object-cover rounded-t-full" />
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 rounded-t-full"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <button class="bg-white text-black px-4 py-2 text-center rounded-full">
+                        Shop Me
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="relative inline-block mt-10 md:mt-0">
+                <img src="arrival2.jpg" alt="" class=" md:h-80   md:w-56 object-cover rounded-t-full" />
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 rounded-t-full"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <button class="bg-white text-black px-4 py-2 text-center rounded-full">
+                        Shop Me
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative inline-block mt-10 md:mt-0">
+                <img src="arrival3.jpg" alt="" class="md:h-80 md:w-56 object-cover rounded-t-full" />
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 rounded-t-full"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <button class="bg-white text-black px-4 py-2 text-center rounded-full">
+                        Shop Me
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="relative inline-block mt-10 md:mt-0">
+                <img src="arrival4.jpg" alt="" class="md:h-80 md:w-56 object-cover rounded-t-full" />
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 rounded-t-full"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <button class="bg-white text-black px-4 py-2 text-center rounded-full">
+                        Shop Me
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative inline-block mt-10 md:mt-0">
+                <img src="arrival5.jpg" alt="" class="md:h-80 md:w-56 object-cover rounded-t-full" />
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 rounded-t-full"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <button class="bg-white text-black px-4 py-2 text-center rounded-full">
+                        Shop Me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fashion in -->
+    <section class="hidden md:block">
+        <div class="flex justify-between items-center m-5">
+            <h1>Fashion In</h1>
+            <h1 class="hover:underline">View All</h1>
+
+        </div>
+
+        <div class="flex ">
+            <img src="new1.avif" alt="" class="h-72 w-72">
+            <img src="new2.avif" alt="" class="h-72 w-72">
+            <img src="new3.avif" alt="" class="h-72 w-72">
+            <img src="new4.avif" alt="" class="h-72 w-72">
+            <img src="new5.avif" alt="" class="h-72 w-72">
+            <img src="new6.avif" alt="" class="h-72 w-72">
+        </div>
+        <div class="flex">
+            <img src="new7.avif" alt="" class="h-72 w-72">
+            <img src="new8.avif" alt="" class="h-72 w-72">
+            <img src="new9.avif" alt="" class="h-72 w-72">
+            <img src="new10.avif" alt="" class="h-72 w-72">
+            <img src="new11.avif" alt="" class="h-72 w-72">
+            <img src="new12.avif" alt="" class="h-72 w-72">
+        </div>
+
+    </section>
+
+    <!-- most wanted -->
+    <section id="most-wanted">
+        <h1 class="text-center font-bold text-4xl m-5">Most Wanted</h1>
+        <div class="overflow-x-auto overflow-y-hidden  whitespace-nowrap scrollbar-hide p-5">
+            <div class="flex gap-5 flex-nowrap gap-20">
+                <div class="relative inline-block  flex-shrink-0">
+                    <img src="most1.webp" alt="" class="h-72 w-64 object-cover">
+
+                    <div class="absolute top-0 left-0 w-60 h-80  bg-opacity-50">
+                        <button class="bg-red-600 text-white px-4 py-2 text-center rounded-lg">Shop Me</button>
+                    </div>
+                    <div class="absolute bottom-2 right-2 ">
+                        <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+                <div class="relative inline-block  flex-shrink-0">
+                    <img src="most2.webp" alt="" class="h-72 w-64 object-cover">
+
+                    <div class="absolute top-0 left-0 w-60 h-80  bg-opacity-50">
+                        <button class="bg-red-600 text-white px-4 py-2 text-center rounded-lg">Shop Me</button>
+                    </div>
+                    <div class="absolute bottom-2 right-2 ">
+                        <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+                <div class="relative inline-block  flex-shrink-0">
+                    <img src="most3.webp" alt="" class="h-72 w-64 object-cover">
+
+                    <div class="absolute top-0 left-0  w-60 h-80 bg-opacity-50">
+                        <button class="bg-red-600 text-white px-4 py-2  rounded-lg">Shop Me</button>
+                    </div>
+                    <div class="absolute bottom-2 right-2 ">
+                        <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+                <div class="relative inline-block  flex-shrink-0">
+                    <img src="most4.webp" alt="" class="h-72 w-64 object-cover">
+
+                    <div class="absolute top-0 left-0 w-60 h-80 bg-opacity-50">
+                        <button class="bg-red-600 text-white px-4 py-2 text-center rounded-lg">Shop Me</button>
+                    </div>
+                    <div class="absolute bottom-2 right-2 ">
+                        <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+                <div class="relative inline-block  flex-shrink-0">
+                    <img src="most5.webp" alt="" class="object-cover h-72 w-64 ">
+
+                    <div class="absolute top-0 left-0 w-60 h-80  bg-opacity-50">
+                        <button class="bg-red-600 text-white px-4 py-2 text-center rounded-lg">Shop Me</button>
+                    </div>
+                    <div class="absolute bottom-2 right-2 ">
+                        <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+                <div class="relative inline-block  flex-shrink-0">
+                    <img src="most6.webp" alt="" class="object-cover h-72 w-64 ">
+
+                    <div class="absolute top-0 left-0 w-60 h-80  bg-opacity-50">
+                        <button class="bg-red-600 text-white px-4 py-2 text-center rounded-lg">Shop Me</button>
+                    </div>
+                    <div class="absolute bottom-2 right-2 ">
+                        <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+                <div class="relative inline-block  flex-shrink-0">
+                    <img src="most7.webp" alt="" class="object-cover h-72 w-64 ">
+
+                    <div class="absolute top-0 left-0 w-60 h-80  bg-opacity-50">
+                        <button class="bg-red-600 text-white px-4 py-2 text-center rounded-lg">Shop Me</button>
+                    </div>
+                    <div class="absolute bottom-2 right-2 ">
+                        <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+                <div class="relative inline-block  flex-shrink-0">
+                    <img src="most8.webp" alt="" class=" object-cover h-72 w-64">
+
+                    <div class="absolute top-0 left-0 w-60 h-80  bg-opacity-50">
+                        <button class="bg-red-600 text-white px-4 py-2 text-center rounded-lg">Shop Me</button>
+                    </div>
+                    <div class="absolute bottom-2 right-2 ">
+                        <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- limited offer -->
+    <section class="m-5 md:mx-10 flex justify-center items-center gap-5 md:gap-10 bg-black text-white p-5">
+        <div>
+            <img src="limited.jpeg" alt="" class=" w-72 h-56 md:w-80 md:h-96 ">
+        </div>
+        <div>
+            <h1 class="text-2xl md:text-5xl font-bold pb-2">Limited Offer</h1>
+            <h2 class="text-xl md:text-3xl font-semibold pb-2">35% OFF on this for the first 30 Customers</h2>
+            <button class="bg-white text-xs text-black p-1 md:p-2 rounded-lg ">Shop now</button>
+        </div>
+
+    </section>
+
+    <!-- news letter -->
+    <section class="text-center m-5 mt-10">
+        <h1 class="pb-4 text-3xl md:text-4xl font-bold text-black">Join our News Letter</h1>
+        <p class="pb-5 text-black">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input title="input" type="text" class="border border-black w-3/4 p-1 focus:outline-none">
+        <br>
+        <button class="bg-black text-white p-3 rounded-full hover:bg-black mt-5">Subscribe</button>
+    </section>
+    <div class="border-b-2"></div>
+
+
+    <!-- footer -->
+    <section id="footer" class="bg-black p-5 text-white">
+        <div class="flex gap-1">
+            <img src="logo.png" alt="" class="h-8 w-8 bg-pink-100 shadow-2xl rounded-full">
+            <h1 class="font-bold text-2xl">Pinchhh</h1>
+        </div>
+        <br>
+        <p class="text-xl">A pinch of tradition, a splash of trend — ethnic fashion redefined for the modern woman.</p>
+        <br>
+        <br>
+        <div class="flex gap-24 ">
+            <i class="icon fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+        </div>
+        <br>
+        <br>
+        <h1 class="xl text-right">@ 2025 Pinchhh.com</h1>
+    </section>
+
+
+
+    <script src="index.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
